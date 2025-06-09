@@ -1,0 +1,59 @@
+﻿,Level,,"Employee personal properties (static or  nearly static)
+",,,,,,,,,"Prints (changed over time, per employee+date)",,,,,,,,"Burns (changed over time, per employee+date)",,,,,,,"Trips (changed over time, per employee+date)",,,,,,"Access Control (changed over time, per employee+date)",,,,,,,,,,
+Field_Name,employee_id,date,employee_department,employee_campus,employee_job,employee_seniority_years,is_contractor,employee_classification,has_foreign_citizenship,has_criminal_record,has_medical_history,print_location_campus,num_print_commands,total_printed_pages,num_print_commands_off_hours,num_printed_pages_off_hours,num_color_prints,num_bw_prints,ratio_color_prints,burn_location_campus,num_burn_requests,max_request_classification,avg_request_classification,num_burn_requests_off_hours,total_burn_volume_mb,total_files_burned,is_abroad,trip_day_number,country_name,is_hostile_country_trip,is_official_trip,risk_travel_indicator ,num_entries,num_exits,first_entry_time,last_exit_time,total_presence_minutes,entered_during_night_hours,num_unique_campus,early_entry_flag,late_exit_flag,entry_during_weekend,
+Description,מספר עובד,תאריך,מחלקת עובד,קמפוס עובד,תפקיד עובד,שנות ותק,האם עובד קבלן כן/לא,רמת סיווג עובד,בעל אזרחות זרה,בעל רקע פלילי,בעל רקע רפואי,קמפוס ביצוע ההדפסה,כמות פקודות הדפסה,כמות עמודים שהודפסה,כמות פקודות הדפסה במועד חריג,כמות דפים שהודפסו במועד חריג,כמות הדפסות צבע ,כמות הדפסות שחור-לבן ,אחוז הדפסות בצבע מתוך כלל ההדפסות,קמפוס ביצוע הצריבה,"סה""כ כמות בקשות",סיווג מקסימלי של הבקשות (שנשלחו באותו יום),סיווג ממוצע של הבקשות (שנשלחו באותו יום),כמות בקשות שנשלחו במועד חריג (יום),"סה""כ נפח צריבה (ליום)","סה""כ קבצים (ליום)","האם העובד היה בחו""ל ביום זה?",היום ה־N מתוך הנסיעה,יעד הנסיעה,האם מדינת היעד היא עוינת?,האם הנסיעה בתפקיד,אינדיקטור סיכון לנסיעה,כמות כניסות,כמות יציאות,שעת כניסה ראשונה,שעת יציאה אחרונה,משך שהייה במתחם,האם בוצעה כניסה בלילה ,מספר קמפוסים שונים בהם נכנס,כניסה ראשונה לפני 06:00 ,יציאה אחרונה אחרי 22:00,האם נכנס בשישי/שבת,
+Values,(Number),"(Date)
+
+
+
+
+
+
+
+",(Catergorial),(Catergorial A/B/C),(Text),(Quantity),(Boolean 0/1),(Categorial 1-4),(Boolean 0/1),(Boolean 0/1),(Boolean 0/1),(Catergorial A/B/C),(Quantity),(Quantity),(Quantity),(Quantity),(Quantity),(Quantity),(Quantity),(Catergorial A/B/C),(Quantity),(Categorial 1-4),(Categorial 1-4),(Quantity),(Quantity),(Quantity),(Boolean 0/1),"(Sequential 1,2,3…)",(Categorial,(Boolean 0/1),(Boolean 0/1),(Boolean 0/1),(Quantity),(Quantity),(Datetime),(Datetime),(Datetime),(Boolean 0/1),(Quantity),(Boolean 0/1),(Boolean 0/1),(Boolean 0/1),
+Remarks,מספר זהות/ מספר עובד רץ,"כל התאריכים בטווח מסוים (יש ליצור לכל עובד את כל טווח התאריכים, גם אם לא בוצעה שום פעילות באותו יום כי המודל לומד גם מהיעדר פעילות)",לאיתור התנהגות שונה לפי תחום עיסוק,המיקום הפיזי של העובד (לצורך בדיקת פעילות הדפסה וצריבה בקמפוסים אחרים),תפקידים עם ציפיות שונות מהתנהגות,"עובד ותיק לרוב כבר ""מוכר"" לארגון – המערכות מכירות את דפוסיו. שינוי התנהגות פתאומי אצל עובד ותיק, הרבה יותר חשוד מאצל עובד חדש.
+עובדים עם ותק רב שחווים:
+ירידת שביעות רצון
+תחושת מיצוי
+בעיות משמעת
+> נמצאים בקבוצת סיכון לפעולה נקמנית/נואשת.
+עובדים ותיקים בד""כ:
+צברו הרשאות גבוהות
+מכירים ""מעקפים"" במערכת
+יודעים להסתיר עקבות
+> הסיכון גבוה יותר, גם אם ההתנהגות נראית רגילה יחסית.",,"1 - שמור
+2 - סודי
+3 - סודי ביותר
+4 - שו""ס",,,,"1. במידה ועובד ביצע באותו יום הדפסות ממספר קמפוסים שונים, נבצע ONE HOT  או שנאלץ את הסימולטור שלא יהיה יותר מקמפוס אחד לעובד באותו תאריך. 2. השדה ישמש להשוואה מול הקמפוס שאליו העובד שייך",,,"הגדרת מועד חריג: 
+בין 21:00-05:00 ביום חול, או בשישי החל מ-16:00, או בשבת כל היום","הגדרת מועד חריג: 
+בין 21:00-05:00 ביום חול, או בשישי החל מ-16:00, או בשבת כל היום",,,"אם יש הרבה עובדים שאינם מדפיסים בצבע בד""כ, אז שימוש בצבע עשוי להיות סיגנל, כאשר מסמכים צבעוניים משמשים לרוב עבור חומרי שיווק, טפסים לרשויות, דוחות גרפיים, תכניות עבדוה, תרשימי ארכיטקטורה וכו'.",,,,להביא או את המקסימום או את הממוצע,"הגדרת מועד חריג: 
+בין 21:00-05:00 ביום חול, או בשישי החל מ-16:00, או בשבת כל היום",יחידת מידה: mb,,,"באמצעות השדה הזה, המודל מבין איפה בתוך הנסיעה העובד נמצא – ולא רק שהוא “בנסיעה”. אחרת, המודל לא יודע להבחין בין נסיעה של יום בודד לבין אחת של שבועיים.",,"טיפ: לשמור על רשימת מדינות עוינות חיצונית (lookup table):
+
+hostile_countries = [""Iran"", ""Syria"", ""Lebanon"", ""North Korea""]
+df['is_hostile_country_trip'] = df['countries_in_trip'].apply(
+    lambda c: any(country in hostile_countries for country in c.split(';'))
+)","אם עובד מתחבר מרחוק בזמן שהוא בכלל בחופשה פרטית – זה חריג.
+
+פעולה כמו העתקת קבצים רגישים/גישה למערכות בזמן זה - סיכון ברור לדליפה.","if (
+    is_abroad == 1 and
+    is_official_trip == 0 and
+    is_hostile_country_trip == 1 and
+    (total_printed_pages > 0 or total_files_burned > 0)
+):
+    risk_trip_indicator = 1
+else:
+    risk_trip_indicator = 0
+
+הסבר הבדיקה:
+העובד היה בחופשה פרטית בחו""ל, ובכל זאת מישהו הדפיס/צרב דרך המשתמש שלו -זה חשד מובהק להדלפת מידע או גניבת זהות.
+
+אפשרות א - הדלפת מידע בשיתוף פעולה עם גורם פנימי אחר
+העובד משתף פעולה עם מישהו אחר מתוך הארגון, שנותן לו גישה או פועל בשמו.
+ זה תרחיש איום פנימי קלאסי מסוג ""collusion"" – אחד הקשים לגילוי.
+
+אפשרות ב - גניבת זהות
+העובד לא יודע בכלל שמתבצעת פעולה בשמו, בזמן שהוא בחו""ל.
+מישהו גנב את האישורים שלו (Credentials).
+ זה כבר זולג לתחום של סייבר פלילי – וחשוב מאוד שהמערכת תזהה את זה מוקדם.",כמה פעמים העובד נכנס לארגון באותו יום,כמה פעמים יצא,מעיד על שעת התחלת יום עבודה,מעיד על סיום יום העבודה,,"הגדרת כניסה בלילה:
+22:00-05:00",מעיד על תנועה בין אזורים,מעיד לעיתים על פעילות לא רגילה,,שישי אחרי 16:00 או בשבת,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

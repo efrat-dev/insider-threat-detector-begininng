@@ -1,0 +1,63 @@
+Main changes:
+
+Print volume ranges:
+
+Regular: 0–3 pages per day
+
+Low suspicion: 3–5 pages
+
+Medium suspicion: 5–7 pages
+
+High suspicion: 7–10 pages
+
+Country risk scores:
+
+Scale: 1–10
+
+Israel and Western countries: 1–2
+
+Hostile countries: 6–10
+
+Correlation between country of origin and foreign citizenship:
+
+90% chance of foreign citizenship for those born abroad
+
+15% chance for native-born Israelis
+
+New column added:
+
+Country_Risk_Score: Risk score of the country
+
+Correlations now reflect reality more accurately because:
+
+Printing volumes are more realistic
+
+There’s a built-in relationship between country of origin and foreign citizenship
+
+The risk level of the country affects the likelihood of suspicion
+
+Key changes in the EDA:
+
+Adjusted analysis to match new print volume range (0–10)
+
+Added analysis of country risk scores
+
+Deep analysis of correlation between country of origin and foreign citizenship
+
+New definitions for behavioral patterns
+
+Anomaly detection adapted to the new scale
+
+Display of correlations between new variables
+
+The code generates:
+
+Distribution plots
+
+Time trend analysis
+
+Relationships between variables
+
+Detection of anomalous patterns
+
+Detailed statistics by category

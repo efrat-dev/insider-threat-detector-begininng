@@ -1,0 +1,53 @@
+90% of records – regular employees:
+
+Print volume: 70–110 MB
+
+Working hours: 8–9 hours
+
+No anomalous activity
+
+10% of records – suspicious employees with varying levels:
+
+High-level suspects (1%):
+
+Print volume over 400 MB
+
+Significant nighttime activity
+
+Direct ties to hostile countries
+
+Mid-level suspects (4%):
+
+Print volume between 150–250 MB
+
+Moderate nighttime activity
+
+Indirect ties to hostile countries
+
+Low-level suspects (5%):
+
+Print volume between 110–150 MB
+
+Minor anomalies in working hours
+
+Minimal ties to hostile countries
+
+Target: 5,000 records
+
+~10% suspicious cases in three different levels
+
+Diverse behavioral patterns
+
+Logical correlations between variables
+
+To run the code:
+
+Make sure you have the pandas and numpy libraries installed.
+
+Copy the code into a .py file.
+
+Run the code.
+
+The CSV file will be generated in the current folder.
+
+The code also includes basic statistics output to verify that the data was generated as expected.

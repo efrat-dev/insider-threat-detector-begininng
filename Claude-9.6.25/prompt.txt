@@ -1,0 +1,28 @@
+I divided the metrics by alert types (these are the color codes).
+Each field includes: data type, a Hebrew description, and notes.
+All fields and metrics are at the employee-date level.
+
+I've also added several smart indicators—composite features that signal suspicious activity patterns.
+
+I verified with ChatGPT that it is valid to include static features in the same table; the model can differentiate between date-dependent and constant attributes, so the personal characteristics are included as well.
+
+The file is attached.
+I would appreciate it if someone could now continue from here and try to generate synthetic data for us.
+
+It's recommended that at least 7% of users in the dataset exhibit malicious behavior, so the model can identify behavior patterns.
+
+Instructions:
+
+Please write Python code that generates a number of records specified by the user.
+I trust you to write code that produces synthetic data as close to real-world behavior as possible.
+
+The goal is to feed this data into a machine learning model.
+Maintain a high degree of realism in the data — don’t make it too easy just to simplify the model’s job.
+
+In addition to the data generation code (parameterized by record count), include:
+
+An EDA (Exploratory Data Analysis) of the entire dataset
+
+A pipeline that trains multiple models on the data
+
+Let me know if you'd like me to start implementing this in Python for you.

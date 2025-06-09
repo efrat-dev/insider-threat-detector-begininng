@@ -1,0 +1,39 @@
+Kali wrote ideas for fields:
+
+Fields per employee and date:
+
+Employee ID
+
+Date
+
+Number of print jobs
+
+Volume of printed pages
+
+Number of print jobs during unusual hours
+
+Volume of anomalous printing
+
+Accumulated presence hours
+
+Entry during unusual hour (Yes/No)
+
+Number of overseas trips
+
+Number of trips to hostile countries
+
+Static fields per employee (no date):
+
+Country of origin
+
+Foreign citizenship (Yes/No)
+
+Criminal background (Yes/No)
+
+Medical background (Yes/No)
+
+Security offenses (Yes/No)
+
+Disciplinary offenses (Yes/No).
+
+
