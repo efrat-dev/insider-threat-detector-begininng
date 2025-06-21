@@ -1,0 +1,62 @@
+Department	Department (Hebrew)	Position	Position (Hebrew)
+Executive Management	הנהלה בכירה	Chief Executive Officer (CEO)	"מנכ""ל"
+Executive Management	הנהלה בכירה	Chief Legal Officer	"סמנכ""ל משפטי"
+Executive Management	הנהלה בכירה	Chief Human Resources Officer (CHRO)	"סמנכ""ל משאבי אנוש"
+Executive Management	הנהלה בכירה	Chief Information Officer (CIO)	"סמנכ""ל מערכות מידע"
+Executive Management	הנהלה בכירה	Chief Technology Officer (CTO)	"סמנכ""ל טכנולוגיות"
+Executive Management	הנהלה בכירה	Chief Operating Officer (COO)	"סמנכ""ל תפעול"
+Executive Management	הנהלה בכירה	Chief Financial Officer (CFO)	"סמנכ""ל כספים"
+Executive Management	הנהלה בכירה	Chief Marketing and Business Development Officer	"סמנכ""ל שיווק ופיתוח עסקי"
+Executive Management	הנהלה בכירה	Secretary	מזכיר/ה
+R&D Department	"מחלקת מו""פ"	Head of R&D	"ראש תחום מו""פ"
+R&D Department	"מחלקת מו""פ"	Systems Engineer	מהנדס מערכת
+R&D Department	"מחלקת מו""פ"	Development Engineer (Hardware / Software / Mechanical)	מהנדס פיתוח (חומרה / תוכנה / מכניקה)
+R&D Department	"מחלקת מו""פ"	Algorithm Engineer	מהנדס אלגוריתמים
+R&D Department	"מחלקת מו""פ"	Integration and Testing Engineer	מהנדס אינטגרציה ובדיקות
+R&D Department	"מחלקת מו""פ"	Secretary	מזכיר/ה
+Engineering Department	מחלקת הנדסה	Process Engineer	מהנדס תהליך
+Engineering Department	מחלקת הנדסה	Design Engineer	מהנדס תכן
+Engineering Department	מחלקת הנדסה	Head of Engineering	ראש תחום הנדסה
+Engineering Department	מחלקת הנדסה	Systems Engineer	מהנדס מערכת
+Engineering Department	מחלקת הנדסה	Test Engineer	מהנדס בדיקות
+Engineering Department	מחלקת הנדסה	Secretary	מזכיר/ה
+Operations and Manufacturing	מחלקת תפעול וייצור	Operations Manager	מנהל תפעול
+Operations and Manufacturing	מחלקת תפעול וייצור	Manufacturing Engineer	מהנדס ייצור
+Operations and Manufacturing	מחלקת תפעול וייצור	Logistics Manager	מנהל לוגיסטיקה
+Operations and Manufacturing	מחלקת תפעול וייצור	Procurement Officer	אחראי רכש
+Operations and Manufacturing	מחלקת תפעול וייצור	Warehouse Manager	מנהל מחסן
+Operations and Manufacturing	מחלקת תפעול וייצור	Secretary	מזכיר/ה
+Project Management	ניהול פרויקטים	Project Manager	מנהל פרויקטים
+Project Management	ניהול פרויקטים	Project Engineer	מהנדס פרויקט
+Project Management	ניהול פרויקטים	Project Coordinator	מתאם פרויקטים
+Project Management	ניהול פרויקטים	Secretary	מזכיר/ה
+Security and Information Security	אבטחה ואבטחת מידע	Physical Access Control	בקרת כניסה וביטחון פיזי
+Security and Information Security	אבטחה ואבטחת מידע	Information Security Investigator	חוקר אבטחת מידע
+Security and Information Security	אבטחה ואבטחת מידע	Cyber Analyst	אנליסט סייבר
+Security and Information Security	אבטחה ואבטחת מידע	Chief Information Security Officer (CISO)	מנהל אבטחת מידע (CISO)
+Security and Information Security	אבטחה ואבטחת מידע	Security Officer	קצין ביטחון
+Human Resources	משאבי אנוש	HR Manager	מנהל/ת משאבי אנוש
+Human Resources	משאבי אנוש	Recruitment Coordinator	רכז/ת גיוס
+Human Resources	משאבי אנוש	Employee Welfare Coordinator	רכז/ת רווחה
+Human Resources	משאבי אנוש	Training Coordinator	אחראי הדרכה
+Human Resources	משאבי אנוש	Secretary	מזכיר/ה
+Legal and Regulation	משפטים ורגולציה	Regulatory Affairs Officer	אחראי רגולציה
+Legal and Regulation	משפטים ורגולציה	Defense Export Compliance Officer	אחראי יצוא ביטחוני
+Legal and Regulation	משפטים ורגולציה	Legal Advisor	יועץ משפטי
+Finance	מחלקת כספים	Accountant	חשב
+Finance	מחלקת כספים	Financial Analyst	אנליסט פיננסי
+Finance	מחלקת כספים	Budget Manager	מנהל תקציב
+Finance	מחלקת כספים	Finance Manager	מנהל כספים
+Finance	מחלקת כספים	Secretary	מזכיר/ה
+Marketing and Business Development	שיווק ופיתוח עסקי	Business Development Manager	מנהל פיתוח עסקי
+Marketing and Business Development	שיווק ופיתוח עסקי	Account Manager	מנהל לקוחות
+Marketing and Business Development	שיווק ופיתוח עסקי	Bid Coordinator	מתאם מכרזים
+Marketing and Business Development	שיווק ופיתוח עסקי	Marketing Manager	מנהל שיווק
+Marketing and Business Development	שיווק ופיתוח עסקי	Secretary	מזכיר/ה
+Information Technology	מחלקת מערכות מידע	IT Director	מנהל מערכות מידע
+Information Technology	מחלקת מערכות מידע	Information Security Specialist	מומחה אבטחת מידע
+Information Technology	מחלקת מערכות מידע	Systems and Network Administrator	איש סיסטם ורשתות
+Information Technology	מחלקת מערכות מידע	BI Developer / Data Analyst	מפתח BI / דאטה אנליסט
+Information Technology	מחלקת מערכות מידע	Enterprise Systems Developer (ERP / CRM / SAP)	מפתח מערכות פנים ארגוניות (ERP / CRM / SAP)
+Information Technology	מחלקת מערכות מידע	Data Scientist	מדען נתונים
+Information Technology	מחלקת מערכות מידע	Secretary	מזכיר/ה
