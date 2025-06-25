@@ -1,0 +1,36 @@
+df=pd.read_csv('i.csv')
+# לפני הרצת הפונקציה, שנה חלק מהעובדים הזדוניים שמדפיסים מחוץ לשעות
+def preprocess_off_hours_data(df, target_percentage=0.277):
+    df_modified = df.copy()
+    
+    # מצא עובדים שמדפיסים מחוץ לשעות
+    off_hours_mask = df_modified['num_print_commands_off_hours'] > 0
+    off_hours_employees = df_modified[off_hours_mask]
+    
+    current_malicious_rate = off_hours_employees['is_malicious'].mean()
+    print(f"Current rate: {current_malicious_rate:.3f}")
+    
+    if current_malicious_rate > target_percentage:
+        # צריך להפחית את מספר הזדוניים
+        malicious_off_hours = off_hours_employees[off_hours_employees['is_malicious'] == 1]
+        total_off_hours = len(off_hours_employees)
+        
+        # חשב כמה זדוניים צריך להשאיר
+        target_malicious_count = int(total_off_hours * target_percentage)
+        current_malicious_count = len(malicious_off_hours)
+        
+        # בחר אקראית עובדים זדוניים לשינוי
+        employees_to_change = malicious_off_hours.sample(
+            n=current_malicious_count - target_malicious_count,
+            random_state=42
+        ).index
+        
+        # שנה אותם ללא זדוניים
+        df_modified.loc[employees_to_change, 'is_malicious'] = 0
+        
+        print(f"Changed {len(employees_to_change)} employees from malicious to normal")
+    
+    return df_modified
+
+# השתמש בזה
+df_preprocessed = preprocess_off_hours_data(df, target_percentage=0.277)
